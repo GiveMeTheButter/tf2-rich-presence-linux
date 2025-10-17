@@ -293,7 +293,7 @@ def interpret(self, console_log_path: str, user_usernames: Set[str], force: bool
 
         if server_still_running:
             hosting = True
-
+        
     if settings.get('hide_queued_gamemode') and "Queued" in queued_state:
         self.log.debug(f"Hiding queued state (\"{queued_state}\" to \"Queued\")")
         queued_state = "Queued"

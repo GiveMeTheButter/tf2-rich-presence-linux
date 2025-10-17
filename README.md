@@ -21,10 +21,11 @@ Discord Rich Presence for Team Fortress 2
 
 ![GUI preview image](gui%20preview.webp)
 
+This repo is a fork of TF2 Rich Presence by Kataiser and is supposed to only work with linux systems.
+Most if not all changes are copied from [Jan200101](https://github.com/Jan200101)'s fork of TF2 Rich Presence, but his fork did not work (at least for me) and was updated 3 years ago by the time of writing, so this is basically a more up to date version of that fork.
+
 ## Download and install
-Installer: [TF2RichPresence_v2.2.2_setup](https://github.com/Kataiser/tf2-rich-presence/releases/download/v2.2.2/TF2RichPresence_v2.2.2_setup.exe) (19.0 MB)  
-Alternatively, get the latest autobuild (may be untested/buggy): [TF2RichPresence_v2.2.2_setup](https://nightly.link/Kataiser/tf2-rich-presence/workflows/Tests.CD/master/TF2RichPresence_v2.2.2_setup.exe.zip)  
-Note that having Python installed is not required. Requires Discord and Steam to be running as well, and will wait until the game and both programs are running.
+Clone this repo, get python and install the requirements in requirements.txt, run launcher.py inside the "TF2 Rich Presence" directory with python.
 
 ## Changelogs
 - [Changelogs.html](https://htmlpreview.github.io/?https://github.com/Kataiser/tf2-rich-presence/blob/master/Changelogs.html)

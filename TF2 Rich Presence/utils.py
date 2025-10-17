@@ -52,8 +52,8 @@ def access_db(write: dict = None, pass_permission_error: bool = True) -> Optiona
 
 @functools.cache
 def db_json_path() -> str:
-    if os.path.isdir(os.path.join(os.getenv('APPDATA'), 'TF2 Rich Presence')):
-        return os.path.join(os.getenv('APPDATA'), 'TF2 Rich Presence', 'DB.json')
+    if os.path.isdir(os.path.join(os.getenv('HOME'), ".config", 'TF2 Rich Presence')):
+        return os.path.join(os.getenv('HOME'), ".config", 'TF2 Rich Presence', 'DB.json')
     else:
         return 'DB.json'
 

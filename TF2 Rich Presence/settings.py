@@ -4,7 +4,7 @@
 
 import functools
 import json
-import winreg
+import unixreg as winreg
 from typing import Optional, Union
 
 import ujson
@@ -14,13 +14,15 @@ import logger
 
 # access a setting from any file, with a string that is the same as the variable name (cached, so settings changes won't be rechecked right away)
 # TODO: access settings as a class with type hinted members
+
+## Test unixreg as replacement for winreg
+
 @functools.cache
 def get(setting: str) -> Union[str, int, bool]:
     try:
         return access_registry()[setting]
     except KeyError:
         return get_setting_default(setting)
-
 
 # either reads the settings key and returns it as a dict, or if a dict is provided, saves it
 # note that settings are saved as JSON in a single string key

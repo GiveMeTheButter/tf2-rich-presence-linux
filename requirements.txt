@@ -14,3 +14,4 @@ setuptools==80.9.0
 ujson==5.11.0
 urllib3==2.5.0
 vdf==3.4
+unixreg
